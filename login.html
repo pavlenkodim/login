@@ -23,9 +23,16 @@
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password">
+                        <div class="mb-1">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="showpass" onchange="showPassword()">
+                            <label class="form-check-label" for="showpass">Show password</label>
+                        </div>
                     </div>
+                    <hr>
                     <div class="mb-3 form-bottom">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="saveme">
